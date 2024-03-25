@@ -18,7 +18,7 @@ st.title("Application of Natural Language Processing Models on Political Informa
 penguins_df = pd.read_csv("CHANNELS_DATA.csv")
 
 penguins_df = penguins_df.drop(penguins_df.columns[0], axis=1)
-st.write(penguins_df, height= 900, width= 500)
+st.write(penguins_df, height= 900)
 selected_title = st.selectbox('Select a Title:', penguins_df['Title'].unique())
 
 # Get the content corresponding to the selected title
